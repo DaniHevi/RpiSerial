@@ -12,7 +12,7 @@ int main ()
   unsigned int nextTime ;
   int c;
 
-  if ((fd = serialOpen ("/dev/ttyS0", 115200)) < 0) {
+  if ((fd = serialOpen ("/dev/ttyS0", 9600)) < 0) {
     fprintf (stderr, "Unable to open serial device: %s\n", strerror (errno)) ;
     return 1 ;
   }
